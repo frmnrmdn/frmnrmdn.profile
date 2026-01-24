@@ -237,10 +237,10 @@ hr {
 
 /* input gambar */
 .banner-1 {
-  background-image: url("/Projek/Design web/img/Hero 4.jpg");
+  background-image: url("img projek/Hero 4.jpg");
 }
 .banner-2 {
-  background-image: url("/Projek/Design web/img/Hero 3.jpg");
+  background-image: url("img projek/Hero 3.jpg");
   justify-content: flex-start;
   align-items: flex-end;
 }
@@ -424,4 +424,5 @@ hr {
     padding-left: 25px;
   }
 }
+
 
