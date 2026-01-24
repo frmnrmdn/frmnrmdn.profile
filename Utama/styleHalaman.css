@@ -1,0 +1,242 @@
+body {
+  background-color: #f0efea;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+#profile {
+  scroll-margin-top: 85px;
+}
+
+#certificate {
+  background-color: #86b6f6;
+  /* scroll-margin-top: 100px; */
+}
+
+footer {
+  background-color: #1679ab;
+  color: #f0efea;
+}
+
+h3 {
+  color: #121212;
+}
+
+#project {
+  background-color: #86b6f6;
+}
+
+a {
+  color: #f0efea;
+  text-decoration: none;
+}
+
+i {
+  color: #d65d40;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.col-md-4 {
+  font-family: "times new roman";
+  text-align: justify;
+}
+
+.text-p {
+  text-align: justify;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+#toggle-mode i {
+  color: #ffd700;
+  transition: color 0.2s ease;
+}
+
+#toggle-mode i:hover {
+  color: #fff700;
+}
+
+.bi-linkedin {
+  color: #0a66c2 !important;
+}
+
+.bi-instagram {
+  color: #e1306c !important;
+}
+
+.bi-linkedin:hover {
+  color: #004182 !important;
+}
+
+.bi-instagram:hover {
+  color: #c13584 !important;
+}
+
+.bi-folder-fill {
+  color: #ffbc4c;
+  font-size: 8rem;
+}
+
+.bi-emoji-grin-fill {
+  color: #ffbc4c;
+}
+
+/* Project */
+.portfolio {
+  background-color: #86b6f6;
+  padding: 40px;
+  text-align: center;
+}
+
+.portfolio h2 {
+  margin-bottom: 20px;
+}
+
+.screenshot-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 350px)); /* max 400px */
+  justify-content: center; /* supaya tetap rata tengah */
+  gap: 20px;
+  padding-top: 50px;
+}
+
+.screenshot {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+}
+
+.screenshot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  max-width: 350px;
+  margin: 0 auto;
+  display: block;
+  max-height: 350px;
+  transition: transform 0.3s ease;
+}
+
+.screenshot:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.screenshot:hover .overlay {
+  opacity: 1;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #021526;
+  color: #e2e2b6;
+}
+
+.dark-mode .navbar {
+  background-color: #121212 !important;
+}
+
+.dark-mode .card {
+  background-color: #021526;
+  color: #e2e2b6;
+}
+
+.dark-mode a,
+/* .dark-mode h2, */
+.dark-mode h1,
+.dark-mode p {
+  color: #e2e2b6 !important;
+}
+
+.dark-mode #title {
+  color: #021526;
+}
+
+.dark-mode #project,
+.dark-mode #certificate {
+  background-color: #6eacda;
+}
+
+.dark-mode #wave-content {
+  fill: #6eacda;
+}
+
+.dark-mode .bi-emoji-grin-fill {
+  color: #e2e2b6;
+}
+
+.dark-mode .portfolio {
+  background-color: #6eacda;
+}
+
+body,
+.card,
+.navbar,
+footer {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron h1 {
+    font-size: 2rem;
+  }
+
+  .jumbotron p {
+    font-size: 1rem;
+  }
+
+  .hero-section {
+    /* height: 100vh; */
+    /* position: relative; */
+    overflow: hidden;
+    padding-top: 14rem;
+  }
+
+  .bottom-wave {
+    padding-top: 200px;
+  }
+
+  .row {
+    padding: 0 20px;
+  }
+}
