@@ -5,7 +5,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background: url("/Projek/Design web/img/Hero 2.jpg") no-repeat center
+  background: url("img projek/Hero 2.jpg") no-repeat center
     center/cover;
   min-height: 100vh;
   position: relative;
@@ -424,3 +424,4 @@ hr {
     padding-left: 25px;
   }
 }
+
