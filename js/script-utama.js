@@ -48,3 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
 function showPreview(src) {
     document.getElementById('previewImage').src = src;
 }
+
+// Inisialisasi Lenis untuk Smooth Scrolling
+const lenis = new Lenis({
+    autoRaf: true,
+});
