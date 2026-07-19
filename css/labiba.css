@@ -109,6 +109,32 @@
   color: #86b6f6;
 }
 
+.highlight-content {
+  padding-left: 120px;
+}
+
 .btn {
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
   background-color: #1679ab;
+  color: #ffffff;
+  border-color: #1679ab;
+}
+
+.btn i {
+  color: #1679ab;
+  transition: color 0.3s ease;
+}
+
+.btn:hover i {
+  color: #ffffff;
 }
