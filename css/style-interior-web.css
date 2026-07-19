@@ -5,8 +5,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background: url("img projek/Hero 2.jpg") no-repeat center
-    center/cover;
+  background: url("img projek/Hero 2.jpg") no-repeat center center/cover;
   min-height: 100vh;
   position: relative;
   padding-top: 120px; /* beri jarak untuk navbar */
@@ -237,10 +236,10 @@ hr {
 
 /* input gambar */
 .banner-1 {
-  background-image: url("img projek/Hero 4.jpg");
+  background-image: url("assets/img-project/Hero 4.jpg");
 }
 .banner-2 {
-  background-image: url("img projek/Hero 3.jpg");
+  background-image: url("assets/img-project/Hero 3.jpg");
   justify-content: flex-start;
   align-items: flex-end;
 }
@@ -424,5 +423,3 @@ hr {
     padding-left: 25px;
   }
 }
-
-
