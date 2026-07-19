@@ -1,0 +1,267 @@
+/* Timeline / Alur Pengguna */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  width: 2px;
+  background: #074173; /* Primary color based on index.html */
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #1679ab; /* Secondary color based on index.html */
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #1679ab;
+}
+
+.timeline-content {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h5 {
+  color: #074173;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+  margin-bottom: 0;
+  color: #555;
+}
+
+.dark-mode .timeline::before {
+  background: #e2e2b6;
+}
+
+.dark-mode .timeline-item::before {
+  background: #86b6f6;
+  border-color: #121212;
+  box-shadow: 0 0 0 2px #86b6f6;
+}
+
+.dark-mode .timeline-content {
+  background: #27374d;
+}
+
+.dark-mode .timeline-content h5 {
+  color: #86b6f6;
+}
+
+.dark-mode .timeline-content p {
+  color: #e2e2b6;
+}
+
+/* Hover efek khusus untuk fitur dan kategori yang konsisten */
+.hover-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Penyesuaian list highlight */
+.highlight-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.highlight-content {
+  padding-left: 120px;
+}
+
+.highlight-list li {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+}
+
+.highlight-list i {
+  color: #1679ab;
+  font-size: 1.2rem;
+}
+
+/* ==============================================
+   DARK MODE — Halaman Labiba
+   ============================================== */
+
+/* Body & Background Umum */
+body.dark-mode {
+  background-color: #021526;
+  color: #e2e2b6;
+}
+
+/* Navbar */
+.dark-mode .navbar {
+  background-color: #121212 !important;
+}
+
+.dark-mode .bi-arrow-left-circle {
+  color: #e2e2b6 !important;
+}
+
+.dark-mode .navbar h2 {
+  color: #86b6f6 !important;
+}
+
+/* Override inline-style warna heading (#074173 dan #1679AB)
+   menggunakan !important agar menang atas inline style */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h4,
+.dark-mode h5 {
+  color: #86b6f6 !important;
+}
+
+/* Teks lead / subtitle di hero */
+.dark-mode p.lead {
+  color: #e2e2b6 !important;
+}
+
+/* Section yang punya background putih / bg-light */
+.dark-mode section,
+.dark-mode .bg-light {
+  background-color: #021526 !important;
+}
+
+/* Card */
+.dark-mode .card {
+  background-color: #0a2540 !important;
+  border-color: #1679ab !important;
+}
+
+/* Judul card */
+.dark-mode .card-title {
+  color: #86b6f6 !important;
+}
+
+/* dark mode text-p */
+.dark-mode .text-p {
+  color: #0a2540 !important;
+}
+
+/* Teks card (.text-secondary dari Bootstrap override) */
+.dark-mode .card-text,
+.dark-mode .text-secondary {
+  color: #c5c5a0 !important;
+}
+
+/* Icon berwarna biru dalam card */
+.dark-mode .card i[style*="color: #1679AB"],
+.dark-mode .card i[style*="color:#1679AB"] {
+  color: #86b6f6 !important;
+}
+
+/* Badge teknologi di hero */
+.dark-mode .badge.bg-primary {
+  background-color: #1679ab !important;
+}
+
+.dark-mode .badge.bg-info {
+  background-color: #2a7fa5 !important;
+  color: #e2e2b6 !important;
+}
+
+.dark-mode .badge.bg-warning {
+  background-color: #b07d20 !important;
+  color: #e2e2b6 !important;
+}
+
+.dark-mode .badge.bg-secondary {
+  background-color: #4a4a6a !important;
+}
+
+/* Tombol / Button */
+.btn {
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #1679ab;
+  color: #ffffff;
+  border-color: #1679ab;
+}
+
+/* Warna default icon */
+.btn i,
+.btn svg {
+  color: #1679ab;
+  transition: color 0.3s ease;
+}
+
+/* Warna icon saat hover */
+.btn:hover i,
+.btn:hover svg {
+  color: #ffffff;
+}
+
+.dark-mode .btn-dark {
+  background-color: #27374d !important;
+  border-color: #27374d !important;
+  color: #e2e2b6 !important;
+}
+
+/* Highlight list teks */
+.dark-mode .highlight-list li {
+  color: #0a2540;
+}
+
+/* Footer */
+.dark-mode footer {
+  background-color: #1679ab;
+  color: #e2e2b6;
+}
+
+.dark-mode footer p,
+.dark-mode footer a {
+  color: #e2e2b6 !important;
+}
+
+/* Transisi halus untuk semua elemen */
+body,
+section,
+.card,
+.navbar,
+footer,
+.badge,
+.btn {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
